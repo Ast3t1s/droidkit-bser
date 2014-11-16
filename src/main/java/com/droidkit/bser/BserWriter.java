@@ -50,7 +50,7 @@ public class BserWriter {
     }
 
     public void writeLong(int fieldNumber, long value) throws IOException {
-        writeVar64Field(fieldNumber, value);
+        writeVarIntField(fieldNumber, value);
     }
 
     public void writeRepeatedLong(int fieldNumber, List<Long> values) throws IOException {
